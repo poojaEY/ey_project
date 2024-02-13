@@ -1,0 +1,29 @@
+<header>
+  <div class="header-left">
+    <img src="/assets/logo3.png" alt="EY Logo" class="ey-logo">
+  </div>
+  <div class="header-center">
+   
+  </div>
+</header>
+
+<main>
+<div class="background-image">
+  <img src="/assets/machine01.jpg" alt="EY Image">
+</div>
+</main>
+
+<div>
+  <div class="login-container" >
+    <h1> Login </h1>
+    <form  (ngSubmit)="login()">
+      <label for="username">Username:</label>
+      <input type="text" id="username" name="username" [(ngModel)]="username" required>
+
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" [(ngModel)]="password" required>
+
+      <button type="submit">Login</button>
+    </form>
+  </div>
+</div>
